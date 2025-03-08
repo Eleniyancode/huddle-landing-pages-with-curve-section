@@ -1,0 +1,308 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+  /* height: 100dvh; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* padding: 40px; */
+  /* border: 2px solid yellow; */
+  background: hsl(207, 100%, 98%);
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  /* padding-bottom: 0px; */
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 400px;
+  /* border: 2px solid yellow; */
+  /* margin: 40px; */
+  padding: 40px;
+  background-color: white;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid yellow; */
+}
+
+header img {
+  width:5em;
+  height: 1em;
+  color: hsl(192, 100%, 9%);
+  margin-top: 7px;
+}
+
+header button {
+  width: 30%;
+  max-width: 200px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid hsl(321, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+  background-color: white;
+  cursor: pointer;
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  /* border: 2px solid yellowgreen; */
+  text-align: center;
+  margin-block: 50px;
+}
+
+.first-section p {
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.first-section button {
+  width: 200px;
+  padding: 10px;
+  justify-self: center;
+  align-self: center;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border-radius: 20px;
+}
+
+.second-section {
+  margin-bottom: 100px;
+  /* border: 2px solid yellowgreen; */
+}
+
+.third-section {
+  /* border: 2px solid yellowgreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.third-section div {
+  align-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid yellowgreen; */
+}
+
+.third-section div img {
+width: 2em;
+/* border:  2px solid yellowgreen; */
+}
+
+.third-section div h2 {
+  font-size: 5em;
+  font-weight: bold;
+  /* border: 2px solid yellowgreen; */
+  margin-top: -5px;
+}
+
+.fourth-section {
+  background: white url(./images/bg-section-bottom-mobile-1.svg);
+  background-repeat: no-repeat;
+  /* border: 2px solid yellowgreen; */
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.fourth-section h2 {
+  font-size: 1em;
+}
+
+.fourth-section p {
+  margin-top: -30px;
+  text-align: center;
+  font-size: .8em;
+}
+
+.fifth-section {
+  /* border: 2px solid yellowgreen; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.fifth-section button {
+  width: 80%;
+  max-width: 200px;
+  align-self: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+}
+
+footer {
+  background: hsl(192, 100%, 9%) url(./images/bg-section-bottom-mobile-2.svg);
+  background-repeat: no-repeat;
+  /* border: 2px solid brown; */
+  width: 90%;
+  max-width: 400px;
+}
+
+.newsletter-section {
+  padding-top: 100px;
+  color: white;
+  padding-inline: 20px;
+  margin-bottom: 30px;
+  margin-bottom: 100px;
+}
+
+.newsletter-section p {
+  margin-bottom: 20px;
+}
+
+.newsletter-section input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.newsletter-section button {
+  padding: 10px;
+  float: right;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.last-section {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-logo {
+  background-color: white;
+  width: 10em;
+  height: 2em;
+}
+
+
+.last-section p {
+  /* border: 2px solid cornsilk; */
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  margin-top: 40px;
+  /* margin-bottom: 40px; */
+  padding-left: 20px;
+}
+
+svg {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50px;
+  margin-right: 10px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
