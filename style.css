@@ -94,7 +94,7 @@ body {
 }
 
 .wrapper {
-  width: 90%;
+  width: 100%;
   max-width: 400px;
   /* border: 2px solid yellow; */
   /* margin: 40px; */
@@ -234,7 +234,7 @@ footer {
   background: hsl(192, 100%, 9%) url(./images/bg-section-bottom-mobile-2.svg);
   background-repeat: no-repeat;
   /* border: 2px solid brown; */
-  width: 90%;
+  width: 100%;
   max-width: 400px;
 }
 
